@@ -95,6 +95,7 @@ class BaseClient
         return $this->requestDingTalk('POST', $uri, [
             RequestOptions::QUERY => $query,
             RequestOptions::MULTIPART => $multipart,
+            RequestOptions::TIMEOUT => 30,
         ]);
     }
 
